@@ -78,11 +78,11 @@ Thanks to XAMPP for providing a convenient web server solution.
 </br>
 <a href="https://www.linkedin.com/in/rupesh-dhamane-b01b85210/?originalSubdomain=in">
   <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
-</a>Gajendra Naphade
-</br>
-</br>
-<a href="https://www.linkedin.com/in/rupesh-dhamane-b01b85210/?originalSubdomain=in">
-  <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
 </a>Rupesh Dhamane
+</br>
+</br>
+<a href="https://www.linkedin.com/in/vedant-chaudhari-b37723275/">
+  <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
+</a>Vedant Chaudhari
 </br>
 </br>
