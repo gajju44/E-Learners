@@ -86,3 +86,9 @@ Thanks to XAMPP for providing a convenient web server solution.
 </a>Vedant Chaudhari
 </br>
 </br>
+
+<a href="https://www.linkedin.com/in/bhavesh-adekar-959aa0276/">
+  <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
+</a>Bhavesh Adekar
+</br>
+</br>
