@@ -1,0 +1,29 @@
+# Ignore vendor directories for PHP projects
+/vendor/
+
+# Ignore node_modules directory for JavaScript projects
+/node_modules/
+
+# Ignore logs and temporary files for PHP projects
+/log/
+/tmp/
+
+# Ignore environment configuration files
+.env
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore build artifacts
+/dist/
+/build/
+
+# Ignore Composer files
+composer.phar
+composer.lock
+/vendor/
+
+# Ignore npm package manager files
+package-lock.json
+npm-debug.log
