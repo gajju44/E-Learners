@@ -48,15 +48,17 @@ Create a new database in MySQL.
 
 3.Log in with your credentials:
 
-Student:
+**Student:**
 
 Username: student@example.com
 Password: password123
-Teacher:
+
+**Teacher:**
 
 Username: teacher@example.com
 Password: password123
-Admin (HOD):
+
+**Admin (HOD):**
 
 Username: admin@example.com
 Password: password123
