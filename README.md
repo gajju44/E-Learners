@@ -31,7 +31,7 @@ Before running the project, make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/E-Learners.git
+   git clone https://github.com/gajju44/E-Learners.git
 
 2. Navigate to the project folder:
    cd E-Learners
