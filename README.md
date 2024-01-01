@@ -70,10 +70,19 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 Thanks to XAMPP for providing a convenient web server solution.
 
 >Contact us
-></br>
+</br>
 <a href="https://www.linkedin.com/in/gajendra-naphade-513a54262/?originalSubdomain=in">
   <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
 </a>Gajendra Naphade
 </br>
 </br>
-
+<a href="https://www.linkedin.com/in/rupesh-dhamane-b01b85210/?originalSubdomain=in">
+  <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
+</a>Gajendra Naphade
+</br>
+</br>
+<a href="https://www.linkedin.com/in/rupesh-dhamane-b01b85210/?originalSubdomain=in">
+  <img src="https://github.com/gajju44/Text-to-speech-converter/blob/main/linkedin-icon-2.svg" alt="LinkedIn" width="30"/>
+</a>Rupesh Dhamane
+</br>
+</br>
