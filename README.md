@@ -40,7 +40,7 @@ Before running the project, make sure you have the following installed:
 
 Create a new database in MySQL.
 
-##Usage
+## Usage
 
 1.Start your XAMPP server.
 
@@ -61,8 +61,8 @@ Admin (HOD):
 Username: admin@example.com
 Password: password123
 
-##License
+## License
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
 
-##Acknowledgments
+## Acknowledgments
 Thanks to XAMPP for providing a convenient web server solution.
