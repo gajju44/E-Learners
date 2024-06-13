@@ -2,6 +2,12 @@
 
 E-Learners is a web-based learning platform developed using PHP, JavaScript, HTML, and CSS. It aims to manage academic activities and records, providing features for students, teachers, and administrators (admin/HOD).
 
+#Authors
+  - Gajendra Naphade
+  - Rupesh Dhamane
+  - Vedant Chaudhari
+  - Bhavesh Adekar
+
 ## Features
 
 - **Student Dashboard:**
