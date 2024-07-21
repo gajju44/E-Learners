@@ -24,9 +24,9 @@ This file contains database configuration assuming you are running mysql using u
 */
 
 define('DB_SERVER', 'localhost'); /*Database server*/
-define('DB_USERNAME', 'gpnagpur_Gajendra');/*User name in Database server*/
-define('DB_PASSWORD', '2013044gajju');/*password of user in Database server*/
-define('DB_NAME', 'gpnagpur_lms');/*database name*/
+define('DB_USERNAME', 'root');/*User name in Database server*/
+define('DB_PASSWORD', '');/*password of user in Database server*/
+define('DB_NAME', 'lms');/*database name*/
 
 // Try connecting to the Database
 $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -38,3 +38,4 @@ if (mysqli_connect_errno())
 }
 
 ?>
+
