@@ -59,10 +59,10 @@ $fid = $_SESSION['faculty'];
         <div class="row">
             <form action="" method="post">
                 <h2>Deletion Section</h2>
-                <div>
-                    <label for="course">Course:</label>
-                    <select id="delcourse" name="delcourse">
-                        <option value="" selected disabled hidden>Select a course</option>
+                <div class="sel-di">
+                
+                    <select class="sel" id="delcourse" name="delcourse">
+                        <option value="" selected disabled hidden>SELECT A COURSE</option>
                         <?php
 
                         // retrieve data from the courses table
@@ -77,10 +77,10 @@ $fid = $_SESSION['faculty'];
                     </select>
                 </div>
 
-                <div>
-                    <label for="unit">Units:</label>
-                    <select id="delunit" name="delunit">
-                        <option value="" selected disabled hidden>Select a unit</option>
+                <div class="sel-di">
+            
+                    <select class="sel" id="delunit" name="delunit">
+                        <option value="" selected disabled hidden>SELECT A UNIT</option>
                         <?php
 
                         // retrieve data from the courses table
@@ -135,7 +135,7 @@ else { // Otherwise, hide all units and show the "no units" message
                         </script>
 
                 </div>
-                <input type="submit" class="btn" value="Delete Unit" name="submit_unit">
+                <input type="submit" class="sel-btn" value="Delete Unit" name="submit_unit">
             </form>
         </div>
     </section>
