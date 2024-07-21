@@ -17,7 +17,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
-
 <?php
 require("Config.php");
 ?>
@@ -71,14 +70,26 @@ if (isset($_POST['submit'])) {
     // Retrieve the form data
     $name = $_POST['name'];
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = str_replace(' ','',$_POST['password']);
 
 
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $repeat =mysqli_query($conn,"SELECT * FROM faculty where username='$username'");
+    if ($repeat === false) {
+        die("Error executing query: " . mysqli_error($conn));
+    }
+    $row=mysqli_fetch_assoc($repeat);
+    if($row){
+        echo '<script>alert("Username already exists"); window.location.href = "admin_dashboard.php";</script>';
+    }
+ else{
     $sql = "INSERT INTO faculty (f_name, username, password) VALUES ('$name', '$username', '$password')";
-    if (mysqli_query($conn, $sql)) {
-        echo '<script>alert("Faculty added successfully...!!!") window.location.href = "admin_dashboard.php";</script>';
-    } else {
+    if(mysqli_query($conn, $sql)) {
+        echo '<script>alert("Faculty added successfully...!!!"); window.location.href = "admin_dashboard.php";</script>';
+    } 
+    else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
+}
 }
 ?>
