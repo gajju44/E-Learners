@@ -164,7 +164,7 @@ $useremail = $_SESSION['lemail'];
                         $c_img = $row["c_img"];
                         ?>
                         <div class="box"
-                            onclick="window.location.href='https://gpnagpur.tk/units.php?c_id=<?php echo $c_id; ?>';"
+                            onclick="window.location.href='http://localhost/images/units.php?c_id=<?php echo $c_id; ?>';"
                             data-aos="zoom-in">
                             <img src="<?php echo $c_img ?>" alt="">
                             <h3>
@@ -290,13 +290,6 @@ $useremail = $_SESSION['lemail'];
                         <a href="#" class="fab fa-linkedin"></a>
                     </div>
                     <h3>Bhavesh Adekar</h3>
-                </div>
-
-                <div class="box">
-                    <div class="share">
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                    <h3>Nandini Giri</h3>
                 </div>
             </div>
         </section>
