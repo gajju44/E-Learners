@@ -87,7 +87,7 @@ window.history.replaceState(null,null,window.location.href);
         $result = mysqli_fetch_array($ret);
         if ($result > 0) {
            
-          if ($password==$result['password']) {
+          if (password_verify($password, $result['password'])) {
             
            $_SESSION['faculty']=$result['f_id'];
             $_SESSION['faculty_logged']=true;
