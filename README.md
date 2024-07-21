@@ -30,7 +30,7 @@ E-Learners is a web-based learning platform developed using PHP, JavaScript, HTM
 Before running the project, make sure you have the following installed:
 
 - [XAMPP](https://www.apachefriends.org/index.html) for PHP, MySQL, and Apache
-- Create a MySQL database for the project
+- Create a MySQL database for the project 
 
 ## Configuration
 
@@ -44,7 +44,7 @@ Before running the project, make sure you have the following installed:
 
 3.Configure the database:
 
-Create a new database in MySQL.
+Create a new database in MySQL. (import the given file from databases directory in your database name it as lms)
 
 ## Usage
 
