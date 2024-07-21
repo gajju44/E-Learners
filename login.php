@@ -72,8 +72,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
         }
     </script>
 </body>
+<Style>
+    body {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: url(https://static.vecteezy.com/system/resources/previews/005/948/321/large_2x/back-to-school-banner-with-hand-drawn-line-art-icons-of-education-science-objects-and-office-supplies-school-supplies-concept-of-education-background-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+</Style>
     <?php
-    error_reporting(0);
+    
     require_once('Config.php');
     // Login PHP
     if (isset($_POST['submit'])) {
@@ -123,18 +135,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
         }
     }
     ?>
-<Style>
-    body {
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    background: url(https://static.vecteezy.com/system/resources/previews/005/948/321/large_2x/back-to-school-banner-with-hand-drawn-line-art-icons-of-education-science-objects-and-office-supplies-school-supplies-concept-of-education-background-free-vector.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-</Style>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js">
     </script>
     <script>
