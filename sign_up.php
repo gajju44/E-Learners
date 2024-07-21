@@ -17,7 +17,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
-
 <!-- register html -->
 <html lang="en">
 
@@ -89,7 +88,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
 
 
 <?php
-error_reporting(0);
+
 require_once('Config.php');
 session_start();
 
@@ -110,15 +109,15 @@ function sendmail($email, $v_code)
     //Server settings
     $mail->SMTPDebug = 0; //Enable verbose debug output
     $mail->isSMTP(); //Send using SMTP
-    $mail->Host = 'mail.gpnagpur.tk'; //Set the SMTP server to send through
+    $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through here it is gmail on server we have to set as example:mail.gpnagpur.tk
     $mail->SMTPAuth = true; //Enable SMTP authentication
-    $mail->Username = 'e-learners@gpnagpur.tk'; //SMTP username
-    $mail->Password = '2013044gajju'; //SMTP password
+    $mail->Username = 'elearnersgp@gmail.com'; //SMTP username
+    $mail->Password = 'dxvtxsctiippvaf'; //SMTP password for server or app password for gmail as example given for gmail
     $mail->SMTPSecure ='ssl'; //Enable implicit ssl encryption
     $mail->Port = 465; //TCP port to connect to;
 
     //Recipients
-    $mail->setFrom('e-learners@gpnagpur.tk', 'E-Learners');
+    $mail->setFrom('elearnersgp@gmail.com', 'E-Learners');
     $mail->addAddress($email); //Add a recipient
 
     //Content
@@ -126,45 +125,49 @@ function sendmail($email, $v_code)
     $mail->Subject = 'Email verification for E-learners';
     $mail->Body =  "Your Registration In Successful
     Click the button below to verify the email address 
-    <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-<html xmlns='http://www.w3.org/1999/xhtml'>
-  <head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>Email Verification by E-Learners</title>
-    <style type=''>
-      body {
-        margin: 0;
 
-      }
-      .course {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2.5rem;
-        margin-top: 5rem;
-        justify-content: center;
-        align-items: center;
-      }
-      .course .box {
-        flex: 1 1 39rem;
-        background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuHgt-ivI9vfemve9V3P4tXbtXDFJmE2KJXg&usqp=CAU);
-        border-radius: .5rem;
-        border: .1rem solid grey;
-        padding: 2.5rem;
-        position: relative;
-        box-shadow: 0 0.1rem grey;
-        transition: 0.2s;
-        cursor: pointer;
-        max-width: 43rem;
-      }
-      table {
+    <html >
+    <head>
+      <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+      <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      <title>Email Verification by E-Learners</title>
+      <style type=''>
+        body {
+          margin: 0;
+          color: white;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .course {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.5rem;
+          margin-top: 5rem;
+          justify-content: center;
+          align-items: center;
+        }
+        .course .box {
+          flex: 1 1 39rem;
+    align-items: center;
+          background:url(https://png.pngtree.com/background/20210714/original/pngtree-doodles-on-green-chalkboard-background-back-to-school-background-picture-image_1207855.jpg);
+          border-radius: .5rem;
+          border: .1rem solid grey;
+          padding: 2.5rem;
+          position: relative;
+          box-shadow: 0 0.1rem grey;
+          transition: 0.2s;
+          cursor: pointer;
+          max-width: 43rem;
+        }
+
+        table {
         border-spacing: 0;
         padding: 12px;
         text-align: center;
         width:100%;
         max-width:600px;
         margin:0 auto;
+        
       }
       td {
         padding: 0;
@@ -172,52 +175,62 @@ function sendmail($email, $v_code)
       img {
         border: 0;
       }
-      h3 {
-        width: 100%;
-        max-width: 150px;
-        height: auto;
-        margin-bottom: 20px;
+      a{
+        color:white;
       }
-      h2,
-      .code {
-        font-weight: bold;
-        font-size: 24px;
-        margin-bottom: 60px;
-
+      a:visited{
+        color:white;
       }
-     
-      .code {
-        border: 3px solid #8774e1;
-        padding: 7px 12px;
-        border-radius: 10px;
-      }
-      .desc {
-        margin-top: 60px;
-        font-size: 18px;
-        line-height: 30px;
-      }
-      .verifybtn{
-        background-color: #eb2a7a;;
-        border: none;
-        color: inherit;
-  text-decoration: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 16px;
-        transition: 0.3s;
-        font-size: 16px;
-            
-    }
       
-      .verifybtn:hover {
-        background: #ff7f41;
-        transform: scale(1.1);
+        h3 {
+          width: 100%;
+          max-width: 150px;
+          height: auto;
+          margin-bottom: 20px;
+          color:white;
+        }
+        h2,
+        .code {
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 60px;
+          color:white;
+        }
+       
+        .code {
+          border: 3px solid #8774e1;
+          padding: 7px 12px;
+          border-radius: 10px;
+        }
+        p{
+          color:white;
+        }
+        .desc {
+          margin-top: 60px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+        .verifybtn{
+          background-color: white;
+          border: none;
+    text-decoration: none;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
+          transition: 0.3s;
+          font-size: 16px;
+          color:white;
       }
-    </style>
+        
+        .verifybtn:hover {
+          background: #ff7f41;
+          transform: scale(1.1);
+        }
+      </style>
   </head>
   <body>
   <section class='course'>
@@ -234,7 +247,7 @@ function sendmail($email, $v_code)
         </tr>
         <tr>
           <td>
-          <a  class='verifybtn' href='https://gpnagpur.tk/verify.php?v_code=$v_code&vemail=$email'>Verify
+          <a  class='verifybtn' href='http://localhost/lms/verify.php?v_code=$v_code&vemail=$email'>Verify
             </a>
 
           </span>
