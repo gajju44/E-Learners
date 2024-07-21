@@ -18,9 +18,25 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
 <?php
+session_start();
 error_reporting(0);
 require_once('Config.php');
-session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<?php
 
 // Get user email from session
 $useremail = $_SESSION['lemail'];
@@ -78,10 +94,13 @@ if (mysqli_num_rows($sql1) > 0) {
 
 
     $query =  mysqli_query($conn,"INSERT INTO result (enrollment_id,test_id, percentage,c_id) VALUES ('$enroll','$test_id', '$score', '$c_id')");
-    
+?>    
 
+<div class="tablediv" style="position:absolute; right:40%;">
+
+<?php
     if ($query) {
-        echo "<center><h3>Your Answers Are Submited</h3></center>";
+        echo "<h3 style='font-weight:bold; font-size:25px; margin-top:8px;'>Your Answers Are Submited</h3>";
         echo "<table align='center' class='table'  border='1' cellpadding='10'>
         <tbody>
                 <tr> <th>Total_Questions
@@ -100,35 +119,54 @@ if (mysqli_num_rows($sql1) > 0) {
                 </tr>
                 </tbody>
             </table>";
-    } else {
+            ?>
+             <button class="btn" onclick="window.history.back()">Back</button>
+            <?php
+    }
+        
+            
+     else {
      echo "<center><h3>" . mysqli_error($conn) . "</h3></center>";
 
     }
+?>
+</div>
+
+    <?php
 }
 ?>
+</body>
+</html>
 
 <style>
+
     .table {
-        border-collapse: collapse;
-        font-size: 15px;
-        overflow: hidden;
-        border-radius: 5px 5px 0 0;
-        border: .1rem solid rgb(105 68 186 / 14%);
-        box-shadow: 0 0.1rem 1.3rem rgb(0 0 0 / 20%);
-    }
+  border-collapse: collapse;
+  font-size: 15px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  border: .1rem solid rgb(105 68 186 / 14%);
+  box-shadow: 0 0.1rem 1.3rem rgb(0 0 0 / 20%);
+}
 
-   
-    .table th {
-        background: rgb(25 25 25 / 90%);
-        color: white;
-        padding: 12px 25px;
-    }
 
-    .table td {
-        padding: 12px 25px;
-    }
 
-    .table tbody tr {
-        border-bottom: 1px solid #ddd;
-    }
+.table th {
+  background: rgb(25 25 25 / 90%);
+  color: white;
+  padding: 12px 25px;
+}
+
+.table td {
+  padding: 12px 25px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.btn{
+    margin-left: 9rem;
+}
+
+
 </style>
