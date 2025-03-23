@@ -489,7 +489,7 @@ header .icons p i {
   margin-bottom: 4rem;
 }
 
-.footer .box {
+.footer .footer-container .box {
   flex: 1 1 23rem;
   border-radius: .5rem;
   padding: 1.5rem;
@@ -503,12 +503,12 @@ header .icons p i {
   max-width: 23rem;
 }
 
-.footer .box h3 {
+.footer .footer-container .box h3 {
   color: var(--violet);
   font-size: 1.5rem;
 }
 
-.footer .box .share a {
+.footer .footer-container .box .share a {
   height: 3rem;
   width: 3rem;
   line-height: 3rem;
@@ -520,7 +520,7 @@ header .icons p i {
   transition: 0.2s;
 }
 
-.footer .box .share a:hover {
+.footer .footer-container .box .share a:hover {
   background: var(--pink);
 }
 /* ==========================================unit section ==================================== */

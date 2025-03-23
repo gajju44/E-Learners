@@ -197,12 +197,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
                     <h3>Bhavesh Adekar</h3>
                 </div>
 
-                <div class="box">
-                    <div class="share">
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                    <h3>Nandini Giri</h3>
-                </div>
+               
             </div>
         </section>
      

@@ -88,7 +88,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
 
                         ?>
                         <div class="box"
-                            onclick="window.location.href='http://localhost/images/theory1.php?c_id=<?php echo $c_id ?>&unit_id=<?php echo $unit_id ?>';">
+                            onclick="window.location.href='theory1.php?c_id=<?php echo $c_id ?>&unit_id=<?php echo $unit_id ?>';">
                             <div class="content">
                                 <h1>
                                     <?php echo $unit_name ?>

@@ -247,7 +247,7 @@ function sendmail($email, $v_code)
         </tr>
         <tr>
           <td>
-          <a  class='verifybtn' href='http://localhost/lms/verify.php?v_code=$v_code&vemail=$email'>Verify
+          <a  class='verifybtn' href='verify.php?v_code=$v_code&vemail=$email'>Verify
             </a>
 
           </span>

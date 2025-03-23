@@ -106,6 +106,8 @@ window.history.replaceState(null,null,window.location.href);
                         Swal.fire({
                             icon: "error",
                             title: "Incorrect password",
+                        }).then(function() {
+                            window.location.href = "facultydashboard.php";
                         });
                       </script>';
             }

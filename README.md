@@ -50,24 +50,24 @@ Create a new database in MySQL. (import the given file from databases directory 
 
 1.Start your XAMPP server.
 
-2.Open the project in your web browser:  http://localhost/E-Learners/
+2.Open the project in your web browser:  http://localhost/lms/
 
 3.Log in with your credentials:
 
 **Student:**
 
-Username: student@example.com
-Password: password123
+Username: gajjunaphade@gmail.com
+Password: 2013044
 
 **Teacher:**
 
-Username: teacher@example.com
-Password: password123
+Username: Gajendra12
+Password: 2013044
 
 **Admin (HOD):**
 
-Username: admin@example.com
-Password: password123
+Username: Admin
+Password: 2013044
 
 ## License
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.

@@ -164,7 +164,7 @@ $useremail = $_SESSION['lemail'];
                         $c_img = $row["c_img"];
                         ?>
                         <div class="box"
-                            onclick="window.location.href='http://localhost/images/units.php?c_id=<?php echo $c_id; ?>';"
+                            onclick="window.location.href='units.php?c_id=<?php echo $c_id; ?>';"
                             data-aos="zoom-in">
                             <img src="<?php echo $c_img ?>" alt="">
                             <h3>

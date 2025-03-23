@@ -78,7 +78,7 @@ if(!isset($_SESSION['logged_in']) && $_SESSION['logged_in'] !== true)
 
 
                         ?>
-                        <div class="box" onclick="window.location.href='http://localhost/images/surprise_test1.php?c_id=<?php echo $c_id; ?>';">
+                        <div class="box" onclick="window.location.href='surprise_test1.php?c_id=<?php echo $c_id; ?>';">
 
 
                             <h3>
